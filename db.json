@@ -1,0 +1,244 @@
+{
+  "users": [
+    {
+      "email": "john@example.com",
+      "password": "123456",
+      "id": 1,
+      "firstname": "John",
+      "lastname": "Doe"
+    },
+    {
+      "email": "jane@example.com",
+      "password": "abcdef",
+      "id": 2,
+      "firstname": "Jane",
+      "lastname": "Doe"
+    },
+    {
+      "first_name": "akram",
+      "last_name": "bj",
+      "username": "akrambj",
+      "email": "ak@gmail.com",
+      "phonenumber": "9842821",
+      "password": "user123",
+      "id": "e92f2aa6-cfb2-4ce9-b630-445c9a87f9a1"
+    },
+    {
+      "first_name": "anes",
+      "last_name": "bj",
+      "username": "anesbj",
+      "email": "anes@gmail.com",
+      "phonenumber": "42134231",
+      "password": "user01",
+      "id": "2869eba3-b6bf-4073-a613-1825a507771b"
+    },
+    {
+      "email": "fsaddsaf@fsdafsda.com",
+      "password": "user01",
+      "id": 3
+    },
+    {
+      "email": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "email": "ab@gmail.com",
+      "password": "kkk",
+      "id": 5
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1,
+      "door": 1,
+      "floor": 1,
+      "image": "",
+      "capacity": 1,
+      "category": "standard",
+      "isAvailable": true,
+      "price": "1000"
+    },
+    {
+      "id": 2,
+      "door": 6,
+      "floor": 2,
+      "image": "",
+      "capacity": 2,
+      "category": "standard",
+      "isAvailable": true,
+      "price": "2000"
+    },
+    {
+      "id": 3,
+      "door": 3,
+      "floor": 3,
+      "image": "",
+      "capacity": 3,
+      "category": "standard",
+      "isAvailable": true,
+      "price": "3000"
+    },
+    {
+      "id": 4,
+      "door": 3,
+      "floor": 1,
+      "image": "",
+      "capacity": 1,
+      "category": "standard",
+      "isAvailable": false,
+      "price": "1000"
+    },
+    {
+      "id": 5,
+      "door": 4,
+      "floor": 2,
+      "image": "",
+      "capacity": 4,
+      "category": "standard",
+      "isAvailable": false,
+      "price": "4000"
+    },
+    {
+      "id": 6,
+      "door": 7,
+      "floor": 2,
+      "image": "",
+      "capacity": 1,
+      "category": "suite",
+      "isAvailable": true,
+      "price": "2000"
+    },
+    {
+      "id": 7,
+      "door": 8,
+      "floor": 3,
+      "image": "",
+      "capacity": 3,
+      "category": "suite",
+      "isAvailable": true,
+      "price": "9000"
+    },
+    {
+      "id": 8,
+      "door": 1,
+      "floor": 1,
+      "image": "",
+      "capacity": 1,
+      "category": "standard",
+      "isAvailable": true,
+      "price": "1000"
+    },
+    {
+      "id": 9,
+      "door": 1,
+      "floor": 2,
+      "image": "",
+      "capacity": 1,
+      "category": "standard",
+      "isAvailable": true,
+      "price": "1000"
+    },
+    {
+      "id": 10,
+      "door": 9,
+      "floor": 3,
+      "image": "",
+      "category": "standard",
+      "isAvailable": true,
+      "price": "3000"
+    },
+    {
+      "debut_date": null,
+      "end_date": null,
+      "bedroom": null,
+      "duration": {
+        "days": 0,
+        "hours": 0
+      },
+      "id": 11
+    }
+  ],
+  "booking": [
+    {
+      "id": 1,
+      "bedroom": 4,
+      "room_id": 1,
+      "duration": 7,
+      "debut_date": "Wed Dec 20 2023 16:48:00 GMT+0200 (CEST)",
+      "end_date": "Wed Dec 25 2023 16:48:00 GMT+0200 (CEST)"
+    },
+    {
+      "duration": null,
+      "debut_date": "2023-12-23T00:00:00.000Z",
+      "bedroom": "10",
+      "end_date": "2023-12-30T00:00:00.000Z",
+      "id": "3809d2e8-c6e2-4bf4-b613-7e64b4565939",
+      "room_id": "1"
+    },
+    {
+      "id": "5f429900-2399-448c-b441-10cbf9cae10f",
+      "room_id": "1",
+      "debut_date": "2023-12-22T00:00:00.000Z",
+      "end_date": "2023-12-25T00:00:00.000Z",
+      "bedroom": null,
+      "duration": {
+        "days": 3,
+        "hours": 0
+      }
+    },
+    {
+      "id": "3f0a45b1-4a63-4fa0-bf93-0b3136054961",
+      "room_id": "1",
+      "debut_date": "2023-12-21T00:00:00.000Z",
+      "end_date": "2023-12-25T00:00:00.000Z",
+      "bedroom": "4",
+      "duration": {
+        "days": 4,
+        "hours": 0
+      }
+    },
+    {
+      "id": "3de2fb32-bd94-4039-ad5a-63f15c11e56d",
+      "room_id": "5",
+      "debut_date": "2023-12-31T00:00:00.000Z",
+      "end_date": "2023-12-27T00:00:00.000Z",
+      "bedroom": "4",
+      "duration": {
+        "days": -4,
+        "hours": 0
+      }
+    },
+    {
+      "id": "59421d22-c2d5-4fba-8ee5-23c81fda9751",
+      "room_id": "2",
+      "debut_date": "2023-12-23T00:00:00.000Z",
+      "end_date": "2023-12-28T00:00:00.000Z",
+      "bedroom": "4",
+      "duration": {
+        "days": 5,
+        "hours": 0
+      }
+    },
+    {
+      "id": "2691f529-7456-4558-917d-df55fcc148c4",
+      "debut_date": null,
+      "end_date": null,
+      "bedroom": "2",
+      "duration": {
+        "days": 0,
+        "hours": 0
+      }
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "standard"
+    },
+    {
+      "id": 2,
+      "name": "suite"
+    }
+  ]
+}
