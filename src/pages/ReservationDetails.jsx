@@ -78,7 +78,7 @@ const ReservationDetails = () => {
 
       <div>
         <form className="flex max-md:flex-col gap-4 rounded w-fit mx-auto bg-primary p-6 justify-center mb-20" onSubmit={handleSubmit}>
-          <label className="mt-2">debut</label>
+          <label className="mt-2 text-white">debut</label>
           <input
             type="date"
             className="w-[150px] rounded"
@@ -86,7 +86,7 @@ const ReservationDetails = () => {
               setFormData({ ...formData, debut_date: new Date(e.target.value) })
             }
           />
-          <label  className="mt-2">end</label>
+          <label  className="mt-2 text-white">end</label>
           <input
             type="date"
             className="w-[150px] rounded"
@@ -94,10 +94,11 @@ const ReservationDetails = () => {
               setFormData({ ...formData, end_date: new Date(e.target.value) })
             }
           />
-          <label  className="mt-2 ">persons number</label>
+          {/* <label  className="mt-2 text-white ">persons number</label> */}
           <input
             type="number"
             className="w-[150px] rounded"
+            placeholder="persons number"
             onChange={(e) =>
               setFormData({ ...formData, bedroom: e.target.value })
             }

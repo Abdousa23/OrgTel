@@ -10,12 +10,12 @@ const Footer = () => {
                 <p className=''>Syphax Hotel</p>
             </div>
             <div className="links flex flex-col justify-between max-sm:hidden">
-                <div className="flex relative max-sm:hidden mt-8">
+                <div className="flex relative max-sm:hidden ml-6 mt-8">
                     <Link to="/" className="px-2 text-lg hover:text-primary"><p className="mx-2 hover:border-b-2 border-primary">Home</p></Link>
                     <Link to="/room" className="px-2 text-lg  hover:text-primary"><p className="mx-2 hover:border-b-2 border-primary">Room</p></Link>
                     <Link to="/pricing" className="px-2 text-lg hover:text-primary"><p className="mx-2 hover:border-b-2 border-primary">Pricing</p></Link>
                 </div>
-                <div className="copyrights text-center">copyrights</div>
+                <div className="copyrights text-center ml-6">copyrights</div>
             </div>
             <div className="contact flex flex-col justify-center">
                 <h1>Contact Us</h1>

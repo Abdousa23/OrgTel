@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import RoomCard from "../../components/user/rooms/RoomCard";
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+
 
 const Rooms = () => {
   const [rooms, setRooms] = useState([]);
@@ -56,13 +59,31 @@ const Rooms = () => {
                   {cat.name}
                 </button>
               ))}
-              <button onClick={() => setFilteredRooms(rooms)}>all</button>
+              {/* <button onClick={() => setFilteredRooms(rooms)}>all</button> */}
             </div>
-            <div className="flex flex-wrap">
-              {filteredRooms.map((room) => (
+            {/* <div className="flex flex-wrap"> */}
+            {/* {filteredRooms.map((room) => (
                 <RoomCard key={room.id} room={room} />
-              ))}
+              ))} */}
+
+            <div className="slider flex row overflow-hidden h-fit">
+              <Carousel autoPlay
+                infiniteLoop
+                useKeyboardArrows
+                dynamicHeight={false}
+                centerMode
+                centerSlidePercentage={33}
+                showStatus={false} // This will hide the number of cards
+                heightMode="max" // This will make the carousel take up the full height of its container
+                showArrows={true} // This will show arrows on the screen for scrolling
+              >
+                <RoomCard />
+                <RoomCard />
+                <RoomCard />
+                <RoomCard />
+              </Carousel>
             </div>
+            {/* </div> */}
           </div>
         )}
       </div>

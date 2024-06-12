@@ -13,24 +13,29 @@ import { Feedback } from "@mui/icons-material";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import RoomDetails from "./pages/RoomDetails";
+import { FormContextProvider } from "./context/FormContext";
 function App() {
-  const auth = useAuth();
+  const {auth} = useAuth();
   return (
     <>
-    <Navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/auth/signup" element={<Signup />} />
+        <Route path="/auth/signup" element={
+          <FormContextProvider>
+            <Signup />
+          </FormContextProvider>
+        } />
         <Route path="/auth/login" element={<Login />} />
-          <Route path="/reservations" element={<Reservations />} />
-          <Route path="/reservations/:roomid" element={<RoomDetails />} />
-        {auth?.user && (
+        <Route path="/reservations" element={<Reservations />} />
+        <Route path="/reservations/:roomid" element={<RoomDetails />} />
+        {/* {auth?.user && ( */}
           <>
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/feedback" element={<Feedback />} />
-            
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/feedback" element={<Feedback />} />
+
           </>
-        )}
+        {/* )} */}
       </Routes>
       <Footer />
     </>

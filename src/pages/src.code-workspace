@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "src",
+			"path": "../../../../hackathon/src"
+		},
+		{
+			"name": "OrgTel",
+			"path": "../.."
+		},
+		{
+			"name": "node_modules",
+			"path": "../../../../hackathon/node_modules"
+		},
+		{
+			"name": "public",
+			"path": "../../../../hackathon/public"
+		}
+	],
+	"settings": {}
+}

@@ -4,14 +4,14 @@ const Navbar = () => {
     const auth = useAuth();
     const user = auth?.user;
     return (
-        <div className="container m-auto">
+        <div className="container mx-auto">
             <nav className="flex justify-around items-center py-4">
                 <div>
                     <img src="" alt="" />
                     
                     <Link to="/" className=" font-extrabold text-gray-800 text-2xl">Logo</Link>
                 </div>
-                <div className="flex relative max-sm:hidden">
+                <div className="flex relative ml-24 max-sm:hidden">
                     <Link to="/" className="px-2 text-lg text-gray-800 hover:text-primary"><p className="mx-2 hover:border-b-2 border-primary">Home</p></Link>
                     <Link to="/reservations" className="px-2 text-lg text-gray-800 hover:text-primary"><p className="mx-2 hover:border-b-2 border-primary">Room</p></Link>
                     <Link to="/" className="px-2 text-lg text-gray-800 hover:text-primary"><p className="mx-2 hover:border-b-2 border-primary">Pricing</p></Link>
