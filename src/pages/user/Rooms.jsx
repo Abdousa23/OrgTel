@@ -69,10 +69,11 @@ const Rooms = () => {
             <div className="slider flex row overflow-hidden h-fit">
               <Carousel autoPlay
                 infiniteLoop
+                showThumbs
                 useKeyboardArrows
                 dynamicHeight={false}
                 centerMode
-                centerSlidePercentage={33}
+                centerSlidePercentage={25}
                 showStatus={false} // This will hide the number of cards
                 heightMode="max" // This will make the carousel take up the full height of its container
                 showArrows={true} // This will show arrows on the screen for scrolling

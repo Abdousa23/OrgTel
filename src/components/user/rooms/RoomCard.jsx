@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import HotelIcon from '@mui/icons-material/Hotel';
 
 const Default ={
-  image:"/src/assets/Room Card.png",
+  image:"https://res.cloudinary.com/dekmr7qlp/image/upload/v1702662380/hotelroom_t9k4d3.png",
   capacity:'3 ',
   price:20,
   door:2,
@@ -12,9 +12,9 @@ const Default ={
 const RoomCard = ({ room = Default  }) => {
   return (
 
-    <div className=" w-fit h-fit my-4 mx-6 bg-white rounded overflow-x-hidden shadow-lg">
+    <div className=" w-[95%]  h-fit my-4  bg-white rounded overflow-x-hidden shadow-lg">
       <div className="overflow-x-hidden ">
-        <img src={room.image} className="w-full" alt="" />
+        <img src={room.image} className="w-[80%]" alt="" />
         </div>
         <div className="py-4 px-8 relative">
         <h2><HotelIcon color="primary" fontSize="large" /> {room.category}</h2>

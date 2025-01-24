@@ -29,7 +29,16 @@ const ReservationDetails = () => {
       formData.debut_date,
       formData.end_date
     );
-
+    console.log(
+      {
+        id,
+        room_id: roomId,
+        debut_date: formData.debut_date,
+        end_date: formData.end_date,
+        bedroom: formData.bedroom,
+        duration: { days, hours },
+      }
+    )
     const res = await fetch(`https://hotel-managment.onrender.com/api/rooms`, {
       method: "POST",
       headers: {
@@ -48,9 +57,11 @@ const ReservationDetails = () => {
     const data = await res.json();
 
     if (res.status === 201) {
-      document.write("success");
+      // document.write("success");
+      console.log('success')
     } else {
-      document.write(data.error);
+      // document.write(data.error);
+      console.log(data.error)
     }
   };
 
@@ -59,18 +70,18 @@ const ReservationDetails = () => {
     bookRoom();
   };
 
-  useEffect(() => {
-    const getRoom = async () => {
-      try {
-        const res = await fetch(`https://hotel-managment.onrender.com/api/rooms/${roomId}`);
-        const data = await res.json();
-        setRoom(data);
-      } catch (err) {
-        setError(err.message);
-      }
-    };
-    getRoom();
-  }, [roomId, apiUrl]);
+  // useEffect(() => {
+  //   const getRoom = async () => {
+  //     try {
+  //       const res = await fetch(`https://hotel-managment.onrender.com/api/rooms/${roomId}`);
+  //       const data = await res.json();
+  //       setRoom(data);
+  //     } catch (err) {
+  //       setError(err.message);
+  //     }
+  //   };
+  //   getRoom();
+  // }, [roomId, apiUrl]);
 
   return (
     <section>
@@ -81,7 +92,7 @@ const ReservationDetails = () => {
           <label className="mt-2 text-white">debut</label>
           <input
             type="date"
-            className="w-[150px] rounded"
+            className="w-[150px] rounded bg-[#E9E9E9]"
             onChange={(e) =>
               setFormData({ ...formData, debut_date: new Date(e.target.value) })
             }
@@ -89,7 +100,7 @@ const ReservationDetails = () => {
           <label  className="mt-2 text-white">end</label>
           <input
             type="date"
-            className="w-[150px] rounded"
+            className="w-[150px] rounded bg-[#E9E9E9]"
             onChange={(e) =>
               setFormData({ ...formData, end_date: new Date(e.target.value) })
             }
@@ -97,7 +108,7 @@ const ReservationDetails = () => {
           {/* <label  className="mt-2 text-white ">persons number</label> */}
           <input
             type="number"
-            className="w-[150px] rounded"
+            className="w-[150px] rounded bg-[#E9E9E9]"
             placeholder="persons number"
             onChange={(e) =>
               setFormData({ ...formData, bedroom: e.target.value })
